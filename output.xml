@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-04T17:39:06.010502" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCasesWorkshop3" source="C:\NAN\Code\Tester-Automation\Automate\TestCasesWorkshop3.robot">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary" type="SETUP">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-04-04T17:39:06.284664" elapsed="0.000000"/>
+</kw>
+<test id="s1-t1" name="TC-007 Verify" line="75">
+<kw name="Open web browser" owner="Keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-04T17:39:06.286665" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-04T17:39:06.285663" elapsed="3.112129"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-04T17:39:09.397792" elapsed="0.434197"/>
+</kw>
+<status status="PASS" start="2024-04-04T17:39:06.285663" elapsed="3.546326"/>
+</kw>
+<kw name="Login data empty" owner="Keywords">
+<kw name="Open web browser" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-04T17:39:09.833990" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-04T17:39:09.833990" elapsed="2.903760"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-04T17:39:12.737750" elapsed="0.433809"/>
+</kw>
+<status status="PASS" start="2024-04-04T17:39:09.833990" elapsed="3.337569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_emailLogin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-04T17:39:13.171559" elapsed="0.637966"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-04-04T17:39:19.445152" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-04T17:39:19.446151" level="FAIL">Element 'id=password' not visible after 5 seconds.</msg>
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-04-04T17:39:13.809525" elapsed="5.638629">Element 'id=password' not visible after 5 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator_emailLogin}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.448154" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${locator_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_msg_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${mag_email}</var>
+<arg>${locator_msg_email}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${mag_email}</arg>
+<arg>email is a required field</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_msg_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${msg_password}</var>
+<arg>${locator_msg_password}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${msg_password}</arg>
+<arg>password must be at least 5 characters</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-04-04T17:39:19.449168" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-04T17:39:09.832976" elapsed="9.617184">Element 'id=password' not visible after 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-04T17:39:19.450160" elapsed="2.436289"/>
+</kw>
+<tag>passs</tag>
+<status status="FAIL" start="2024-04-04T17:39:06.284664" elapsed="15.602792">Element 'id=password' not visible after 5 seconds.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-04-04T17:39:21.888450" elapsed="2.400096"/>
+</kw>
+<status status="FAIL" start="2024-04-04T17:39:06.013504" elapsed="18.275042"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">passs</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCasesWorkshop3">TestCasesWorkshop3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
